@@ -1,6 +1,6 @@
 [gd_scene load_steps=23 format=3 uid="uid://bxx1i5rjd0bti"]
 
-[ext_resource type="Texture2D" uid="uid://cbm466fwj6ehh" path="res://Assets/player.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://dr3n24avrx4o5" path="res://Assets/player.png" id="1"]
 [ext_resource type="Script" path="res://Player/Jumping.gd" id="2"]
 [ext_resource type="Script" path="res://Player/Moving.gd" id="3"]
 [ext_resource type="Script" path="res://Player/StateMachine.gd" id="4"]
@@ -126,6 +126,7 @@ animations = [{
 size = Vector2(16, 46)
 
 [node name="Player" type="CharacterBody2D"]
+floor_constant_speed = true
 script = ExtResource("9")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
